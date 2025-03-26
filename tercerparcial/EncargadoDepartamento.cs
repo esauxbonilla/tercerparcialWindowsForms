@@ -68,7 +68,8 @@ namespace tercerparcial
 
         private void btncrearactividad_Click(object sender, EventArgs e)
         {
-
+            CRUDactividad frm = new CRUDactividad(idDepartamento);
+            frm.Show();
         }
 
         private void btnAccionesProyecto_Click(object sender, EventArgs e)
@@ -113,6 +114,11 @@ namespace tercerparcial
             {
                 conx.Close();
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

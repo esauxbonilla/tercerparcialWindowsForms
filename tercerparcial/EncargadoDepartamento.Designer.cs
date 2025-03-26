@@ -55,7 +55,7 @@
             // btncrearactividad
             // 
             this.btncrearactividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncrearactividad.Location = new System.Drawing.Point(33, 144);
+            this.btncrearactividad.Location = new System.Drawing.Point(33, 140);
             this.btncrearactividad.Name = "btncrearactividad";
             this.btncrearactividad.Size = new System.Drawing.Size(119, 44);
             this.btncrearactividad.TabIndex = 1;
@@ -93,6 +93,7 @@
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 5;
             this.label2.Text = "Actividades";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
