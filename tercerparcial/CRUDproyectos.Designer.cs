@@ -166,9 +166,9 @@
             // 
             // txtobservaciones
             // 
-            this.txtobservaciones.Location = new System.Drawing.Point(191, 265);
+            this.txtobservaciones.Location = new System.Drawing.Point(223, 265);
             this.txtobservaciones.Name = "txtobservaciones";
-            this.txtobservaciones.Size = new System.Drawing.Size(554, 20);
+            this.txtobservaciones.Size = new System.Drawing.Size(522, 20);
             this.txtobservaciones.TabIndex = 13;
             // 
             // txtnombreproyecto
@@ -205,7 +205,7 @@
             // btncrearproyecto
             // 
             this.btncrearproyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncrearproyecto.Location = new System.Drawing.Point(679, 84);
+            this.btncrearproyecto.Location = new System.Drawing.Point(295, 536);
             this.btncrearproyecto.Name = "btncrearproyecto";
             this.btncrearproyecto.Size = new System.Drawing.Size(109, 42);
             this.btncrearproyecto.TabIndex = 18;
@@ -235,7 +235,7 @@
             // btneliminarproyecto
             // 
             this.btneliminarproyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneliminarproyecto.Location = new System.Drawing.Point(679, 154);
+            this.btneliminarproyecto.Location = new System.Drawing.Point(419, 536);
             this.btneliminarproyecto.Name = "btneliminarproyecto";
             this.btneliminarproyecto.Size = new System.Drawing.Size(109, 42);
             this.btneliminarproyecto.TabIndex = 21;

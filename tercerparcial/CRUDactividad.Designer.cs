@@ -71,6 +71,7 @@
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Id Actividad";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -194,7 +195,7 @@
             // btncrearactividad
             // 
             this.btncrearactividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncrearactividad.Location = new System.Drawing.Point(682, 83);
+            this.btncrearactividad.Location = new System.Drawing.Point(241, 528);
             this.btncrearactividad.Name = "btncrearactividad";
             this.btncrearactividad.Size = new System.Drawing.Size(106, 43);
             this.btncrearactividad.TabIndex = 17;
@@ -224,7 +225,7 @@
             // btneliminaractividad
             // 
             this.btneliminaractividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btneliminaractividad.Location = new System.Drawing.Point(682, 156);
+            this.btneliminaractividad.Location = new System.Drawing.Point(371, 528);
             this.btneliminaractividad.Name = "btneliminaractividad";
             this.btneliminaractividad.Size = new System.Drawing.Size(106, 45);
             this.btneliminaractividad.TabIndex = 20;

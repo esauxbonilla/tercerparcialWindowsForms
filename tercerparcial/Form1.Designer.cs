@@ -32,13 +32,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.txtcontrasenia = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btniniciarsesion
             // 
             this.btniniciarsesion.BackColor = System.Drawing.Color.Silver;
             this.btniniciarsesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btniniciarsesion.Location = new System.Drawing.Point(70, 207);
+            this.btniniciarsesion.Location = new System.Drawing.Point(79, 276);
             this.btniniciarsesion.Name = "btniniciarsesion";
             this.btniniciarsesion.Size = new System.Drawing.Size(227, 43);
             this.btniniciarsesion.TabIndex = 0;
@@ -49,7 +51,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(71, 25);
+            this.label2.Location = new System.Drawing.Point(80, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(235, 48);
             this.label2.TabIndex = 1;
@@ -58,27 +60,51 @@
             // txtusuario
             // 
             this.txtusuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusuario.Location = new System.Drawing.Point(70, 97);
+            this.txtusuario.Location = new System.Drawing.Point(79, 157);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(227, 23);
             this.txtusuario.TabIndex = 2;
+            this.txtusuario.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             this.txtusuario.Enter += new System.EventHandler(this.txtusuario_Enter);
             this.txtusuario.Leave += new System.EventHandler(this.txtusuario_Leave);
             // 
             // txtcontrasenia
             // 
             this.txtcontrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcontrasenia.Location = new System.Drawing.Point(70, 152);
+            this.txtcontrasenia.Location = new System.Drawing.Point(79, 225);
             this.txtcontrasenia.Name = "txtcontrasenia";
             this.txtcontrasenia.Size = new System.Drawing.Size(227, 23);
             this.txtcontrasenia.TabIndex = 3;
             this.txtcontrasenia.Enter += new System.EventHandler(this.txtcontrasenia_Enter);
             this.txtcontrasenia.Leave += new System.EventHandler(this.txtcontrasenia_Leave);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(155, 122);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Usuario";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(143, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 20);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Contraseña";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(363, 314);
+            this.ClientSize = new System.Drawing.Size(411, 391);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtcontrasenia);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label2);
@@ -97,7 +123,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.TextBox txtcontrasenia;
-
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
