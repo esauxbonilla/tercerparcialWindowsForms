@@ -12,9 +12,18 @@ namespace tercerparcial
 {
     public partial class CRUDColaborador : Form
     {
-        public CRUDColaborador()
+        int idEmpleado;
+
+        public CRUDColaborador(int idEmp)
         {
             InitializeComponent();
+            idEmpleado = idEmp;
+        }
+
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

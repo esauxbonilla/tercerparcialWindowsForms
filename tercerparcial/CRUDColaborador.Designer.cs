@@ -34,15 +34,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnvolverentregar = new System.Windows.Forms.Button();
-            this.btnentregar = new System.Windows.Forms.Button();
-            this.btnconsultarentrega = new System.Windows.Forms.Button();
-            this.gridviewentrega = new System.Windows.Forms.DataGridView();
+            this.btnEntregar = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.gridviewactividades = new System.Windows.Forms.DataGridView();
             this.txtestadoentrega = new System.Windows.Forms.TextBox();
             this.txtnombreentrega = new System.Windows.Forms.TextBox();
             this.txtidactividadentrega = new System.Windows.Forms.TextBox();
-            this.txturlentrega = new System.Windows.Forms.TextBox();
-            this.btnmodificarentrega = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.gridviewentrega)).BeginInit();
+            this.txtUrlArchivo = new System.Windows.Forms.TextBox();
+            this.btnModificar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gridviewactividades)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,6 +63,7 @@
             this.label2.Size = new System.Drawing.Size(95, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Id Actividad";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -104,33 +105,33 @@
             this.btnvolverentregar.Text = "Volver";
             this.btnvolverentregar.UseVisualStyleBackColor = true;
             // 
-            // btnentregar
+            // btnEntregar
             // 
-            this.btnentregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnentregar.Location = new System.Drawing.Point(511, 288);
-            this.btnentregar.Name = "btnentregar";
-            this.btnentregar.Size = new System.Drawing.Size(99, 50);
-            this.btnentregar.TabIndex = 6;
-            this.btnentregar.Text = "Entregar";
-            this.btnentregar.UseVisualStyleBackColor = true;
+            this.btnEntregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntregar.Location = new System.Drawing.Point(511, 288);
+            this.btnEntregar.Name = "btnEntregar";
+            this.btnEntregar.Size = new System.Drawing.Size(99, 50);
+            this.btnEntregar.TabIndex = 6;
+            this.btnEntregar.Text = "Entregar";
+            this.btnEntregar.UseVisualStyleBackColor = true;
             // 
-            // btnconsultarentrega
+            // btnConsultar
             // 
-            this.btnconsultarentrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnconsultarentrega.Location = new System.Drawing.Point(511, 344);
-            this.btnconsultarentrega.Name = "btnconsultarentrega";
-            this.btnconsultarentrega.Size = new System.Drawing.Size(99, 50);
-            this.btnconsultarentrega.TabIndex = 7;
-            this.btnconsultarentrega.Text = "Consultar";
-            this.btnconsultarentrega.UseVisualStyleBackColor = true;
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.Location = new System.Drawing.Point(511, 344);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(99, 50);
+            this.btnConsultar.TabIndex = 7;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
-            // gridviewentrega
+            // gridviewactividades
             // 
-            this.gridviewentrega.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridviewentrega.Location = new System.Drawing.Point(29, 288);
-            this.gridviewentrega.Name = "gridviewentrega";
-            this.gridviewentrega.Size = new System.Drawing.Size(476, 162);
-            this.gridviewentrega.TabIndex = 8;
+            this.gridviewactividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridviewactividades.Location = new System.Drawing.Point(29, 288);
+            this.gridviewactividades.Name = "gridviewactividades";
+            this.gridviewactividades.Size = new System.Drawing.Size(476, 162);
+            this.gridviewactividades.TabIndex = 8;
             // 
             // txtestadoentrega
             // 
@@ -153,36 +154,36 @@
             this.txtidactividadentrega.Size = new System.Drawing.Size(100, 20);
             this.txtidactividadentrega.TabIndex = 11;
             // 
-            // txturlentrega
+            // txtUrlArchivo
             // 
-            this.txturlentrega.Location = new System.Drawing.Point(191, 240);
-            this.txturlentrega.Name = "txturlentrega";
-            this.txturlentrega.Size = new System.Drawing.Size(597, 20);
-            this.txturlentrega.TabIndex = 12;
+            this.txtUrlArchivo.Location = new System.Drawing.Point(191, 240);
+            this.txtUrlArchivo.Name = "txtUrlArchivo";
+            this.txtUrlArchivo.Size = new System.Drawing.Size(597, 20);
+            this.txtUrlArchivo.TabIndex = 12;
             // 
-            // btnmodificarentrega
+            // btnModificar
             // 
-            this.btnmodificarentrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnmodificarentrega.Location = new System.Drawing.Point(511, 400);
-            this.btnmodificarentrega.Name = "btnmodificarentrega";
-            this.btnmodificarentrega.Size = new System.Drawing.Size(99, 50);
-            this.btnmodificarentrega.TabIndex = 13;
-            this.btnmodificarentrega.Text = "Modificar";
-            this.btnmodificarentrega.UseVisualStyleBackColor = true;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.Location = new System.Drawing.Point(511, 400);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(99, 50);
+            this.btnModificar.TabIndex = 13;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
             // 
             // CRUDColaborador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 478);
-            this.Controls.Add(this.btnmodificarentrega);
-            this.Controls.Add(this.txturlentrega);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.txtUrlArchivo);
             this.Controls.Add(this.txtidactividadentrega);
             this.Controls.Add(this.txtnombreentrega);
             this.Controls.Add(this.txtestadoentrega);
-            this.Controls.Add(this.gridviewentrega);
-            this.Controls.Add(this.btnconsultarentrega);
-            this.Controls.Add(this.btnentregar);
+            this.Controls.Add(this.gridviewactividades);
+            this.Controls.Add(this.btnConsultar);
+            this.Controls.Add(this.btnEntregar);
             this.Controls.Add(this.btnvolverentregar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -191,7 +192,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CRUDColaborador";
             this.Text = "CRUDColaborador";
-            ((System.ComponentModel.ISupportInitialize)(this.gridviewentrega)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridviewactividades)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,13 +206,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnvolverentregar;
-        private System.Windows.Forms.Button btnentregar;
-        private System.Windows.Forms.Button btnconsultarentrega;
-        private System.Windows.Forms.DataGridView gridviewentrega;
+        private System.Windows.Forms.Button btnEntregar;
+        private System.Windows.Forms.Button btnConsultar;
+        private System.Windows.Forms.DataGridView gridviewactividades;
         private System.Windows.Forms.TextBox txtestadoentrega;
         private System.Windows.Forms.TextBox txtnombreentrega;
         private System.Windows.Forms.TextBox txtidactividadentrega;
-        private System.Windows.Forms.TextBox txturlentrega;
-        private System.Windows.Forms.Button btnmodificarentrega;
+        private System.Windows.Forms.TextBox txtUrlArchivo;
+        private System.Windows.Forms.Button btnModificar;
     }
 }

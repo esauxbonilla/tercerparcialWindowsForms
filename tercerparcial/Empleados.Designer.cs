@@ -30,10 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnasignadascolaborador = new System.Windows.Forms.Button();
-            this.gridviewempleado = new System.Windows.Forms.DataGridView();
+            this.gridview = new System.Windows.Forms.DataGridView();
             this.btnentregar = new System.Windows.Forms.Button();
             this.btnvolvercolaborador = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.gridviewempleado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridview)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,13 +56,13 @@
             this.btnasignadascolaborador.UseVisualStyleBackColor = true;
             this.btnasignadascolaborador.Click += new System.EventHandler(this.button1_Click);
             // 
-            // gridviewempleado
+            // gridview
             // 
-            this.gridviewempleado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridviewempleado.Location = new System.Drawing.Point(143, 84);
-            this.gridviewempleado.Name = "gridviewempleado";
-            this.gridviewempleado.Size = new System.Drawing.Size(547, 127);
-            this.gridviewempleado.TabIndex = 3;
+            this.gridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridview.Location = new System.Drawing.Point(143, 84);
+            this.gridview.Name = "gridview";
+            this.gridview.Size = new System.Drawing.Size(547, 127);
+            this.gridview.TabIndex = 3;
             // 
             // btnentregar
             // 
@@ -91,12 +91,12 @@
             this.ClientSize = new System.Drawing.Size(717, 241);
             this.Controls.Add(this.btnvolvercolaborador);
             this.Controls.Add(this.btnentregar);
-            this.Controls.Add(this.gridviewempleado);
+            this.Controls.Add(this.gridview);
             this.Controls.Add(this.btnasignadascolaborador);
             this.Controls.Add(this.label1);
             this.Name = "Empleados";
             this.Text = "Empleados";
-            ((System.ComponentModel.ISupportInitialize)(this.gridviewempleado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridview)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -105,7 +105,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnasignadascolaborador;
-        private System.Windows.Forms.DataGridView gridviewempleado;
+        private System.Windows.Forms.DataGridView gridview;
         private System.Windows.Forms.Button btnentregar;
         private System.Windows.Forms.Button btnvolvercolaborador;
     }

@@ -37,20 +37,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtdescripcion = new System.Windows.Forms.TextBox();
-            this.txtfechaentrega = new System.Windows.Forms.TextBox();
-            this.txtnombreactividad = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtFechaEntrega = new System.Windows.Forms.TextBox();
+            this.txtNombreActividad = new System.Windows.Forms.TextBox();
             this.txtidproyecto = new System.Windows.Forms.TextBox();
-            this.txtidactividad = new System.Windows.Forms.TextBox();
-            this.txtestado = new System.Windows.Forms.TextBox();
-            this.txtfechainicio = new System.Windows.Forms.TextBox();
-            this.txturlarchivo = new System.Windows.Forms.TextBox();
+            this.txtIdActividad = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtFechaInicio = new System.Windows.Forms.TextBox();
+            this.txtArchivo = new System.Windows.Forms.TextBox();
             this.btncrearactividad = new System.Windows.Forms.Button();
             this.btnconsultaractividad = new System.Windows.Forms.Button();
             this.btnmodificaractividad = new System.Windows.Forms.Button();
             this.btneliminaractividad = new System.Windows.Forms.Button();
             this.btnvolveractividad = new System.Windows.Forms.Button();
             this.gridviewactividades = new System.Windows.Forms.DataGridView();
+            this.comboBoxProyectos = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewactividades)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +82,7 @@
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Id Proyecto";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -136,61 +138,61 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Url Archivo";
             // 
-            // txtdescripcion
+            // txtDescripcion
             // 
-            this.txtdescripcion.Location = new System.Drawing.Point(208, 352);
-            this.txtdescripcion.Name = "txtdescripcion";
-            this.txtdescripcion.Size = new System.Drawing.Size(530, 20);
-            this.txtdescripcion.TabIndex = 9;
+            this.txtDescripcion.Location = new System.Drawing.Point(208, 352);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(530, 20);
+            this.txtDescripcion.TabIndex = 9;
             // 
-            // txtfechaentrega
+            // txtFechaEntrega
             // 
-            this.txtfechaentrega.Location = new System.Drawing.Point(208, 304);
-            this.txtfechaentrega.Name = "txtfechaentrega";
-            this.txtfechaentrega.Size = new System.Drawing.Size(139, 20);
-            this.txtfechaentrega.TabIndex = 10;
+            this.txtFechaEntrega.Location = new System.Drawing.Point(208, 304);
+            this.txtFechaEntrega.Name = "txtFechaEntrega";
+            this.txtFechaEntrega.Size = new System.Drawing.Size(139, 20);
+            this.txtFechaEntrega.TabIndex = 10;
             // 
-            // txtnombreactividad
+            // txtNombreActividad
             // 
-            this.txtnombreactividad.Location = new System.Drawing.Point(208, 207);
-            this.txtnombreactividad.Name = "txtnombreactividad";
-            this.txtnombreactividad.Size = new System.Drawing.Size(174, 20);
-            this.txtnombreactividad.TabIndex = 11;
+            this.txtNombreActividad.Location = new System.Drawing.Point(208, 207);
+            this.txtNombreActividad.Name = "txtNombreActividad";
+            this.txtNombreActividad.Size = new System.Drawing.Size(174, 20);
+            this.txtNombreActividad.TabIndex = 11;
             // 
             // txtidproyecto
             // 
-            this.txtidproyecto.Location = new System.Drawing.Point(208, 156);
+            this.txtidproyecto.Location = new System.Drawing.Point(401, 156);
             this.txtidproyecto.Name = "txtidproyecto";
             this.txtidproyecto.Size = new System.Drawing.Size(100, 20);
             this.txtidproyecto.TabIndex = 12;
             // 
-            // txtidactividad
+            // txtIdActividad
             // 
-            this.txtidactividad.Location = new System.Drawing.Point(208, 105);
-            this.txtidactividad.Name = "txtidactividad";
-            this.txtidactividad.Size = new System.Drawing.Size(100, 20);
-            this.txtidactividad.TabIndex = 13;
+            this.txtIdActividad.Location = new System.Drawing.Point(208, 105);
+            this.txtIdActividad.Name = "txtIdActividad";
+            this.txtIdActividad.Size = new System.Drawing.Size(100, 20);
+            this.txtIdActividad.TabIndex = 13;
             // 
-            // txtestado
+            // txtEstado
             // 
-            this.txtestado.Location = new System.Drawing.Point(208, 404);
-            this.txtestado.Name = "txtestado";
-            this.txtestado.Size = new System.Drawing.Size(100, 20);
-            this.txtestado.TabIndex = 14;
+            this.txtEstado.Location = new System.Drawing.Point(208, 404);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(100, 20);
+            this.txtEstado.TabIndex = 14;
             // 
-            // txtfechainicio
+            // txtFechaInicio
             // 
-            this.txtfechainicio.Location = new System.Drawing.Point(208, 254);
-            this.txtfechainicio.Name = "txtfechainicio";
-            this.txtfechainicio.Size = new System.Drawing.Size(139, 20);
-            this.txtfechainicio.TabIndex = 15;
+            this.txtFechaInicio.Location = new System.Drawing.Point(208, 254);
+            this.txtFechaInicio.Name = "txtFechaInicio";
+            this.txtFechaInicio.Size = new System.Drawing.Size(139, 20);
+            this.txtFechaInicio.TabIndex = 15;
             // 
-            // txturlarchivo
+            // txtArchivo
             // 
-            this.txturlarchivo.Location = new System.Drawing.Point(208, 456);
-            this.txturlarchivo.Name = "txturlarchivo";
-            this.txturlarchivo.Size = new System.Drawing.Size(530, 20);
-            this.txturlarchivo.TabIndex = 16;
+            this.txtArchivo.Location = new System.Drawing.Point(208, 456);
+            this.txtArchivo.Name = "txtArchivo";
+            this.txtArchivo.Size = new System.Drawing.Size(530, 20);
+            this.txtArchivo.TabIndex = 16;
             // 
             // btncrearactividad
             // 
@@ -201,6 +203,7 @@
             this.btncrearactividad.TabIndex = 17;
             this.btncrearactividad.Text = "Crear Actividad";
             this.btncrearactividad.UseVisualStyleBackColor = true;
+            this.btncrearactividad.Click += new System.EventHandler(this.btncrearactividad_Click);
             // 
             // btnconsultaractividad
             // 
@@ -211,6 +214,7 @@
             this.btnconsultaractividad.TabIndex = 18;
             this.btnconsultaractividad.Text = "Consultar Actividad";
             this.btnconsultaractividad.UseVisualStyleBackColor = true;
+            this.btnconsultaractividad.Click += new System.EventHandler(this.btnconsultaractividad_Click);
             // 
             // btnmodificaractividad
             // 
@@ -221,6 +225,7 @@
             this.btnmodificaractividad.TabIndex = 19;
             this.btnmodificaractividad.Text = "Modificar Actividad";
             this.btnmodificaractividad.UseVisualStyleBackColor = true;
+            this.btnmodificaractividad.Click += new System.EventHandler(this.btnmodificaractividad_Click);
             // 
             // btneliminaractividad
             // 
@@ -231,6 +236,7 @@
             this.btneliminaractividad.TabIndex = 20;
             this.btneliminaractividad.Text = "Eliminar Actividad";
             this.btneliminaractividad.UseVisualStyleBackColor = true;
+            this.btneliminaractividad.Click += new System.EventHandler(this.btneliminaractividad_Click);
             // 
             // btnvolveractividad
             // 
@@ -250,25 +256,34 @@
             this.gridviewactividades.Size = new System.Drawing.Size(699, 224);
             this.gridviewactividades.TabIndex = 22;
             // 
+            // comboBoxProyectos
+            // 
+            this.comboBoxProyectos.FormattingEnabled = true;
+            this.comboBoxProyectos.Location = new System.Drawing.Point(208, 157);
+            this.comboBoxProyectos.Name = "comboBoxProyectos";
+            this.comboBoxProyectos.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxProyectos.TabIndex = 23;
+            // 
             // CRUDactividad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 844);
+            this.Controls.Add(this.comboBoxProyectos);
             this.Controls.Add(this.gridviewactividades);
             this.Controls.Add(this.btnvolveractividad);
             this.Controls.Add(this.btneliminaractividad);
             this.Controls.Add(this.btnmodificaractividad);
             this.Controls.Add(this.btnconsultaractividad);
             this.Controls.Add(this.btncrearactividad);
-            this.Controls.Add(this.txturlarchivo);
-            this.Controls.Add(this.txtfechainicio);
-            this.Controls.Add(this.txtestado);
-            this.Controls.Add(this.txtidactividad);
+            this.Controls.Add(this.txtArchivo);
+            this.Controls.Add(this.txtFechaInicio);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtIdActividad);
             this.Controls.Add(this.txtidproyecto);
-            this.Controls.Add(this.txtnombreactividad);
-            this.Controls.Add(this.txtfechaentrega);
-            this.Controls.Add(this.txtdescripcion);
+            this.Controls.Add(this.txtNombreActividad);
+            this.Controls.Add(this.txtFechaEntrega);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -297,19 +312,20 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtdescripcion;
-        private System.Windows.Forms.TextBox txtfechaentrega;
-        private System.Windows.Forms.TextBox txtnombreactividad;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtFechaEntrega;
+        private System.Windows.Forms.TextBox txtNombreActividad;
         private System.Windows.Forms.TextBox txtidproyecto;
-        private System.Windows.Forms.TextBox txtidactividad;
-        private System.Windows.Forms.TextBox txtestado;
-        private System.Windows.Forms.TextBox txtfechainicio;
-        private System.Windows.Forms.TextBox txturlarchivo;
+        private System.Windows.Forms.TextBox txtIdActividad;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtFechaInicio;
+        private System.Windows.Forms.TextBox txtArchivo;
         private System.Windows.Forms.Button btncrearactividad;
         private System.Windows.Forms.Button btnconsultaractividad;
         private System.Windows.Forms.Button btnmodificaractividad;
         private System.Windows.Forms.Button btneliminaractividad;
         private System.Windows.Forms.Button btnvolveractividad;
         private System.Windows.Forms.DataGridView gridviewactividades;
+        private System.Windows.Forms.ComboBox comboBoxProyectos;
     }
 }

@@ -32,12 +32,14 @@
             this.btnvolverasignaractividad = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.gridviewconsultaractividad = new System.Windows.Forms.DataGridView();
+            this.gridviewAsignaciones = new System.Windows.Forms.DataGridView();
             this.txtactividadasignar = new System.Windows.Forms.TextBox();
             this.txtempleadoasignar = new System.Windows.Forms.TextBox();
-            this.btnconsultarasignadas = new System.Windows.Forms.Button();
-            this.btnasigmar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.gridviewconsultaractividad)).BeginInit();
+            this.btnConsultarAsignaciones = new System.Windows.Forms.Button();
+            this.btnAsignar = new System.Windows.Forms.Button();
+            this.comboBoxColaboradores = new System.Windows.Forms.ComboBox();
+            this.comboBoxActividades = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gridviewAsignaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -78,65 +80,85 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Id Actividad";
             // 
-            // gridviewconsultaractividad
+            // gridviewAsignaciones
             // 
-            this.gridviewconsultaractividad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridviewconsultaractividad.Location = new System.Drawing.Point(46, 231);
-            this.gridviewconsultaractividad.Name = "gridviewconsultaractividad";
-            this.gridviewconsultaractividad.Size = new System.Drawing.Size(742, 150);
-            this.gridviewconsultaractividad.TabIndex = 4;
+            this.gridviewAsignaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridviewAsignaciones.Location = new System.Drawing.Point(46, 231);
+            this.gridviewAsignaciones.Name = "gridviewAsignaciones";
+            this.gridviewAsignaciones.Size = new System.Drawing.Size(742, 150);
+            this.gridviewAsignaciones.TabIndex = 4;
             // 
             // txtactividadasignar
             // 
-            this.txtactividadasignar.Location = new System.Drawing.Point(195, 139);
+            this.txtactividadasignar.Location = new System.Drawing.Point(350, 142);
             this.txtactividadasignar.Name = "txtactividadasignar";
             this.txtactividadasignar.Size = new System.Drawing.Size(116, 20);
             this.txtactividadasignar.TabIndex = 5;
             // 
             // txtempleadoasignar
             // 
-            this.txtempleadoasignar.Location = new System.Drawing.Point(195, 92);
+            this.txtempleadoasignar.Location = new System.Drawing.Point(350, 92);
             this.txtempleadoasignar.Name = "txtempleadoasignar";
             this.txtempleadoasignar.Size = new System.Drawing.Size(116, 20);
             this.txtempleadoasignar.TabIndex = 6;
             // 
-            // btnconsultarasignadas
+            // btnConsultarAsignaciones
             // 
-            this.btnconsultarasignadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnconsultarasignadas.Location = new System.Drawing.Point(676, 169);
-            this.btnconsultarasignadas.Name = "btnconsultarasignadas";
-            this.btnconsultarasignadas.Size = new System.Drawing.Size(112, 47);
-            this.btnconsultarasignadas.TabIndex = 7;
-            this.btnconsultarasignadas.Text = "Consultar Asignadas";
-            this.btnconsultarasignadas.UseVisualStyleBackColor = true;
+            this.btnConsultarAsignaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarAsignaciones.Location = new System.Drawing.Point(676, 169);
+            this.btnConsultarAsignaciones.Name = "btnConsultarAsignaciones";
+            this.btnConsultarAsignaciones.Size = new System.Drawing.Size(112, 47);
+            this.btnConsultarAsignaciones.TabIndex = 7;
+            this.btnConsultarAsignaciones.Text = "Consultar Asignadas";
+            this.btnConsultarAsignaciones.UseVisualStyleBackColor = true;
+            this.btnConsultarAsignaciones.Click += new System.EventHandler(this.btnConsultarAsignaciones_Click);
             // 
-            // btnasigmar
+            // btnAsignar
             // 
-            this.btnasigmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnasigmar.Location = new System.Drawing.Point(545, 169);
-            this.btnasigmar.Name = "btnasigmar";
-            this.btnasigmar.Size = new System.Drawing.Size(112, 47);
-            this.btnasigmar.TabIndex = 8;
-            this.btnasigmar.Text = "Asignar";
-            this.btnasigmar.UseVisualStyleBackColor = true;
+            this.btnAsignar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsignar.Location = new System.Drawing.Point(545, 169);
+            this.btnAsignar.Name = "btnAsignar";
+            this.btnAsignar.Size = new System.Drawing.Size(112, 47);
+            this.btnAsignar.TabIndex = 8;
+            this.btnAsignar.Text = "Asignar";
+            this.btnAsignar.UseVisualStyleBackColor = true;
+            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
+            // 
+            // comboBoxColaboradores
+            // 
+            this.comboBoxColaboradores.FormattingEnabled = true;
+            this.comboBoxColaboradores.Location = new System.Drawing.Point(163, 93);
+            this.comboBoxColaboradores.Name = "comboBoxColaboradores";
+            this.comboBoxColaboradores.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxColaboradores.TabIndex = 9;
+            // 
+            // comboBoxActividades
+            // 
+            this.comboBoxActividades.FormattingEnabled = true;
+            this.comboBoxActividades.Location = new System.Drawing.Point(163, 140);
+            this.comboBoxActividades.Name = "comboBoxActividades";
+            this.comboBoxActividades.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxActividades.TabIndex = 10;
             // 
             // AsignarActividad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(806, 402);
-            this.Controls.Add(this.btnasigmar);
-            this.Controls.Add(this.btnconsultarasignadas);
+            this.Controls.Add(this.comboBoxActividades);
+            this.Controls.Add(this.comboBoxColaboradores);
+            this.Controls.Add(this.btnAsignar);
+            this.Controls.Add(this.btnConsultarAsignaciones);
             this.Controls.Add(this.txtempleadoasignar);
             this.Controls.Add(this.txtactividadasignar);
-            this.Controls.Add(this.gridviewconsultaractividad);
+            this.Controls.Add(this.gridviewAsignaciones);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnvolverasignaractividad);
             this.Controls.Add(this.label1);
             this.Name = "AsignarActividad";
             this.Text = "AsignarActividad";
-            ((System.ComponentModel.ISupportInitialize)(this.gridviewconsultaractividad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridviewAsignaciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,10 +170,12 @@
         private System.Windows.Forms.Button btnvolverasignaractividad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView gridviewconsultaractividad;
+        private System.Windows.Forms.DataGridView gridviewAsignaciones;
         private System.Windows.Forms.TextBox txtactividadasignar;
         private System.Windows.Forms.TextBox txtempleadoasignar;
-        private System.Windows.Forms.Button btnconsultarasignadas;
-        private System.Windows.Forms.Button btnasigmar;
+        private System.Windows.Forms.Button btnConsultarAsignaciones;
+        private System.Windows.Forms.Button btnAsignar;
+        private System.Windows.Forms.ComboBox comboBoxColaboradores;
+        private System.Windows.Forms.ComboBox comboBoxActividades;
     }
 }
