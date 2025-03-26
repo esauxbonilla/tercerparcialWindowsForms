@@ -37,21 +37,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtdescripcionproyecto = new System.Windows.Forms.TextBox();
-            this.txtestadoproyecto = new System.Windows.Forms.TextBox();
-            this.txtfechaentregaproyecto = new System.Windows.Forms.TextBox();
-            this.txtfechainicioproyecto = new System.Windows.Forms.TextBox();
-            this.txtobservaciones = new System.Windows.Forms.TextBox();
-            this.txtnombreproyecto = new System.Windows.Forms.TextBox();
-            this.txtiddepartamento = new System.Windows.Forms.TextBox();
-            this.txtidproyecto = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtEstadoProyecto = new System.Windows.Forms.TextBox();
+            this.txtFechaEntrega = new System.Windows.Forms.TextBox();
+            this.txtFechaInicio = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
+            this.txtNombreProyecto = new System.Windows.Forms.TextBox();
+            this.txtIdDepartamento = new System.Windows.Forms.TextBox();
+            this.txtIdProyecto = new System.Windows.Forms.TextBox();
             this.btnregresarproyecto = new System.Windows.Forms.Button();
             this.btncrearproyecto = new System.Windows.Forms.Button();
             this.btnmodificarproyecto = new System.Windows.Forms.Button();
             this.btnconsultarproyecto = new System.Windows.Forms.Button();
             this.btneliminarproyecto = new System.Windows.Forms.Button();
-            this.gridviewproyectos = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.gridviewproyectos)).BeginInit();
+            this.gridProyectos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProyectos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -137,61 +137,61 @@
             this.label9.Text = "Estado Del Proyecto";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // txtdescripcionproyecto
+            // txtDescripcion
             // 
-            this.txtdescripcionproyecto.Location = new System.Drawing.Point(191, 499);
-            this.txtdescripcionproyecto.Name = "txtdescripcionproyecto";
-            this.txtdescripcionproyecto.Size = new System.Drawing.Size(554, 20);
-            this.txtdescripcionproyecto.TabIndex = 9;
+            this.txtDescripcion.Location = new System.Drawing.Point(191, 499);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(554, 20);
+            this.txtDescripcion.TabIndex = 9;
             // 
-            // txtestadoproyecto
+            // txtEstadoProyecto
             // 
-            this.txtestadoproyecto.Location = new System.Drawing.Point(223, 441);
-            this.txtestadoproyecto.Name = "txtestadoproyecto";
-            this.txtestadoproyecto.Size = new System.Drawing.Size(100, 20);
-            this.txtestadoproyecto.TabIndex = 10;
+            this.txtEstadoProyecto.Location = new System.Drawing.Point(223, 441);
+            this.txtEstadoProyecto.Name = "txtEstadoProyecto";
+            this.txtEstadoProyecto.Size = new System.Drawing.Size(100, 20);
+            this.txtEstadoProyecto.TabIndex = 10;
             // 
-            // txtfechaentregaproyecto
+            // txtFechaEntrega
             // 
-            this.txtfechaentregaproyecto.Location = new System.Drawing.Point(223, 380);
-            this.txtfechaentregaproyecto.Name = "txtfechaentregaproyecto";
-            this.txtfechaentregaproyecto.Size = new System.Drawing.Size(100, 20);
-            this.txtfechaentregaproyecto.TabIndex = 11;
+            this.txtFechaEntrega.Location = new System.Drawing.Point(223, 380);
+            this.txtFechaEntrega.Name = "txtFechaEntrega";
+            this.txtFechaEntrega.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaEntrega.TabIndex = 11;
             // 
-            // txtfechainicioproyecto
+            // txtFechaInicio
             // 
-            this.txtfechainicioproyecto.Location = new System.Drawing.Point(223, 320);
-            this.txtfechainicioproyecto.Name = "txtfechainicioproyecto";
-            this.txtfechainicioproyecto.Size = new System.Drawing.Size(100, 20);
-            this.txtfechainicioproyecto.TabIndex = 12;
+            this.txtFechaInicio.Location = new System.Drawing.Point(223, 320);
+            this.txtFechaInicio.Name = "txtFechaInicio";
+            this.txtFechaInicio.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaInicio.TabIndex = 12;
             // 
-            // txtobservaciones
+            // txtObservaciones
             // 
-            this.txtobservaciones.Location = new System.Drawing.Point(223, 265);
-            this.txtobservaciones.Name = "txtobservaciones";
-            this.txtobservaciones.Size = new System.Drawing.Size(522, 20);
-            this.txtobservaciones.TabIndex = 13;
+            this.txtObservaciones.Location = new System.Drawing.Point(223, 265);
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(522, 20);
+            this.txtObservaciones.TabIndex = 13;
             // 
-            // txtnombreproyecto
+            // txtNombreProyecto
             // 
-            this.txtnombreproyecto.Location = new System.Drawing.Point(223, 206);
-            this.txtnombreproyecto.Name = "txtnombreproyecto";
-            this.txtnombreproyecto.Size = new System.Drawing.Size(100, 20);
-            this.txtnombreproyecto.TabIndex = 14;
+            this.txtNombreProyecto.Location = new System.Drawing.Point(223, 206);
+            this.txtNombreProyecto.Name = "txtNombreProyecto";
+            this.txtNombreProyecto.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreProyecto.TabIndex = 14;
             // 
-            // txtiddepartamento
+            // txtIdDepartamento
             // 
-            this.txtiddepartamento.Location = new System.Drawing.Point(223, 153);
-            this.txtiddepartamento.Name = "txtiddepartamento";
-            this.txtiddepartamento.Size = new System.Drawing.Size(100, 20);
-            this.txtiddepartamento.TabIndex = 15;
+            this.txtIdDepartamento.Location = new System.Drawing.Point(223, 153);
+            this.txtIdDepartamento.Name = "txtIdDepartamento";
+            this.txtIdDepartamento.Size = new System.Drawing.Size(100, 20);
+            this.txtIdDepartamento.TabIndex = 15;
             // 
-            // txtidproyecto
+            // txtIdProyecto
             // 
-            this.txtidproyecto.Location = new System.Drawing.Point(223, 93);
-            this.txtidproyecto.Name = "txtidproyecto";
-            this.txtidproyecto.Size = new System.Drawing.Size(100, 20);
-            this.txtidproyecto.TabIndex = 16;
+            this.txtIdProyecto.Location = new System.Drawing.Point(223, 93);
+            this.txtIdProyecto.Name = "txtIdProyecto";
+            this.txtIdProyecto.Size = new System.Drawing.Size(100, 20);
+            this.txtIdProyecto.TabIndex = 16;
             // 
             // btnregresarproyecto
             // 
@@ -212,6 +212,7 @@
             this.btncrearproyecto.TabIndex = 18;
             this.btncrearproyecto.Text = "Crear Proyecto";
             this.btncrearproyecto.UseVisualStyleBackColor = true;
+            this.btncrearproyecto.Click += new System.EventHandler(this.btncrearproyecto_Click);
             // 
             // btnmodificarproyecto
             // 
@@ -222,6 +223,7 @@
             this.btnmodificarproyecto.TabIndex = 19;
             this.btnmodificarproyecto.Text = "Modificar proyecto";
             this.btnmodificarproyecto.UseVisualStyleBackColor = true;
+            this.btnmodificarproyecto.Click += new System.EventHandler(this.btnmodificarproyecto_Click);
             // 
             // btnconsultarproyecto
             // 
@@ -232,6 +234,7 @@
             this.btnconsultarproyecto.TabIndex = 20;
             this.btnconsultarproyecto.Text = "Consultar Proyecto";
             this.btnconsultarproyecto.UseVisualStyleBackColor = true;
+            this.btnconsultarproyecto.Click += new System.EventHandler(this.btnconsultarproyecto_Click);
             // 
             // btneliminarproyecto
             // 
@@ -242,34 +245,35 @@
             this.btneliminarproyecto.TabIndex = 21;
             this.btneliminarproyecto.Text = "Eliminar Proyecto";
             this.btneliminarproyecto.UseVisualStyleBackColor = true;
+            this.btneliminarproyecto.Click += new System.EventHandler(this.btneliminarproyecto_Click);
             // 
-            // gridviewproyectos
+            // gridProyectos
             // 
-            this.gridviewproyectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridviewproyectos.Location = new System.Drawing.Point(43, 594);
-            this.gridviewproyectos.Name = "gridviewproyectos";
-            this.gridviewproyectos.Size = new System.Drawing.Size(733, 210);
-            this.gridviewproyectos.TabIndex = 22;
+            this.gridProyectos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridProyectos.Location = new System.Drawing.Point(43, 594);
+            this.gridProyectos.Name = "gridProyectos";
+            this.gridProyectos.Size = new System.Drawing.Size(733, 210);
+            this.gridProyectos.TabIndex = 22;
             // 
             // CRUDproyectos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 841);
-            this.Controls.Add(this.gridviewproyectos);
+            this.Controls.Add(this.gridProyectos);
             this.Controls.Add(this.btneliminarproyecto);
             this.Controls.Add(this.btnconsultarproyecto);
             this.Controls.Add(this.btnmodificarproyecto);
             this.Controls.Add(this.btncrearproyecto);
             this.Controls.Add(this.btnregresarproyecto);
-            this.Controls.Add(this.txtidproyecto);
-            this.Controls.Add(this.txtiddepartamento);
-            this.Controls.Add(this.txtnombreproyecto);
-            this.Controls.Add(this.txtobservaciones);
-            this.Controls.Add(this.txtfechainicioproyecto);
-            this.Controls.Add(this.txtfechaentregaproyecto);
-            this.Controls.Add(this.txtestadoproyecto);
-            this.Controls.Add(this.txtdescripcionproyecto);
+            this.Controls.Add(this.txtIdProyecto);
+            this.Controls.Add(this.txtIdDepartamento);
+            this.Controls.Add(this.txtNombreProyecto);
+            this.Controls.Add(this.txtObservaciones);
+            this.Controls.Add(this.txtFechaInicio);
+            this.Controls.Add(this.txtFechaEntrega);
+            this.Controls.Add(this.txtEstadoProyecto);
+            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -281,7 +285,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CRUDproyectos";
             this.Text = "CRUDproyectos";
-            ((System.ComponentModel.ISupportInitialize)(this.gridviewproyectos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProyectos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -298,19 +302,19 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtdescripcionproyecto;
-        private System.Windows.Forms.TextBox txtestadoproyecto;
-        private System.Windows.Forms.TextBox txtfechaentregaproyecto;
-        private System.Windows.Forms.TextBox txtfechainicioproyecto;
-        private System.Windows.Forms.TextBox txtobservaciones;
-        private System.Windows.Forms.TextBox txtnombreproyecto;
-        private System.Windows.Forms.TextBox txtiddepartamento;
-        private System.Windows.Forms.TextBox txtidproyecto;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtEstadoProyecto;
+        private System.Windows.Forms.TextBox txtFechaEntrega;
+        private System.Windows.Forms.TextBox txtFechaInicio;
+        private System.Windows.Forms.TextBox txtObservaciones;
+        private System.Windows.Forms.TextBox txtNombreProyecto;
+        private System.Windows.Forms.TextBox txtIdDepartamento;
+        private System.Windows.Forms.TextBox txtIdProyecto;
         private System.Windows.Forms.Button btnregresarproyecto;
         private System.Windows.Forms.Button btncrearproyecto;
         private System.Windows.Forms.Button btnmodificarproyecto;
         private System.Windows.Forms.Button btnconsultarproyecto;
         private System.Windows.Forms.Button btneliminarproyecto;
-        private System.Windows.Forms.DataGridView gridviewproyectos;
+        private System.Windows.Forms.DataGridView gridProyectos;
     }
 }
