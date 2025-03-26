@@ -177,5 +177,10 @@ namespace tercerparcial
                 MessageBox.Show("Error al modificar actividad: " + ex.Message);
             }
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

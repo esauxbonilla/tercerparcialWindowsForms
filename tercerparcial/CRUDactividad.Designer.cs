@@ -49,7 +49,7 @@
             this.btnconsultaractividad = new System.Windows.Forms.Button();
             this.btnmodificaractividad = new System.Windows.Forms.Button();
             this.btneliminaractividad = new System.Windows.Forms.Button();
-            this.btnvolveractividad = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.gridviewactividades = new System.Windows.Forms.DataGridView();
             this.comboBoxProyectos = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewactividades)).BeginInit();
@@ -238,15 +238,16 @@
             this.btneliminaractividad.UseVisualStyleBackColor = true;
             this.btneliminaractividad.Click += new System.EventHandler(this.btneliminaractividad_Click);
             // 
-            // btnvolveractividad
+            // btnVolver
             // 
-            this.btnvolveractividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnvolveractividad.Location = new System.Drawing.Point(682, 10);
-            this.btnvolveractividad.Name = "btnvolveractividad";
-            this.btnvolveractividad.Size = new System.Drawing.Size(106, 45);
-            this.btnvolveractividad.TabIndex = 21;
-            this.btnvolveractividad.Text = "Volver";
-            this.btnvolveractividad.UseVisualStyleBackColor = true;
+            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(682, 10);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(106, 45);
+            this.btnVolver.TabIndex = 21;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // gridviewactividades
             // 
@@ -271,7 +272,7 @@
             this.ClientSize = new System.Drawing.Size(800, 844);
             this.Controls.Add(this.comboBoxProyectos);
             this.Controls.Add(this.gridviewactividades);
-            this.Controls.Add(this.btnvolveractividad);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btneliminaractividad);
             this.Controls.Add(this.btnmodificaractividad);
             this.Controls.Add(this.btnconsultaractividad);
@@ -324,7 +325,7 @@
         private System.Windows.Forms.Button btnconsultaractividad;
         private System.Windows.Forms.Button btnmodificaractividad;
         private System.Windows.Forms.Button btneliminaractividad;
-        private System.Windows.Forms.Button btnvolveractividad;
+        private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.DataGridView gridviewactividades;
         private System.Windows.Forms.ComboBox comboBoxProyectos;
     }

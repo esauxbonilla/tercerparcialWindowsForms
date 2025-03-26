@@ -45,7 +45,7 @@
             this.txtNombreProyecto = new System.Windows.Forms.TextBox();
             this.txtIdDepartamento = new System.Windows.Forms.TextBox();
             this.txtIdProyecto = new System.Windows.Forms.TextBox();
-            this.btnregresarproyecto = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.btncrearproyecto = new System.Windows.Forms.Button();
             this.btnmodificarproyecto = new System.Windows.Forms.Button();
             this.btnconsultarproyecto = new System.Windows.Forms.Button();
@@ -193,15 +193,16 @@
             this.txtIdProyecto.Size = new System.Drawing.Size(100, 20);
             this.txtIdProyecto.TabIndex = 16;
             // 
-            // btnregresarproyecto
+            // btnVolver
             // 
-            this.btnregresarproyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregresarproyecto.Location = new System.Drawing.Point(679, 12);
-            this.btnregresarproyecto.Name = "btnregresarproyecto";
-            this.btnregresarproyecto.Size = new System.Drawing.Size(109, 42);
-            this.btnregresarproyecto.TabIndex = 17;
-            this.btnregresarproyecto.Text = "Volver";
-            this.btnregresarproyecto.UseVisualStyleBackColor = true;
+            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(679, 12);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(109, 42);
+            this.btnVolver.TabIndex = 17;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btncrearproyecto
             // 
@@ -265,7 +266,7 @@
             this.Controls.Add(this.btnconsultarproyecto);
             this.Controls.Add(this.btnmodificarproyecto);
             this.Controls.Add(this.btncrearproyecto);
-            this.Controls.Add(this.btnregresarproyecto);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.txtIdProyecto);
             this.Controls.Add(this.txtIdDepartamento);
             this.Controls.Add(this.txtNombreProyecto);
@@ -310,7 +311,7 @@
         private System.Windows.Forms.TextBox txtNombreProyecto;
         private System.Windows.Forms.TextBox txtIdDepartamento;
         private System.Windows.Forms.TextBox txtIdProyecto;
-        private System.Windows.Forms.Button btnregresarproyecto;
+        private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btncrearproyecto;
         private System.Windows.Forms.Button btnmodificarproyecto;
         private System.Windows.Forms.Button btnconsultarproyecto;

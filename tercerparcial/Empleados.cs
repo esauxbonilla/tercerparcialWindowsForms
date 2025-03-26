@@ -23,13 +23,26 @@ namespace tercerparcial
             // Puedes usar este idEmpleado para cargar datos del usuario
         }
 
-        public Empleados()
-        {
-            InitializeComponent();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnEntregarActividad_Click(object sender, EventArgs e)
+        {
+            CRUDColaborador frm = new CRUDColaborador(idEmpleado);
+            frm.Show();
+        }
+
+        private void btnActividadesAsignadas_Click(object sender, EventArgs e)
+        {
+            CRUDColaborador frm = new CRUDColaborador(idEmpleado);
+            frm.Show();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Close(); // Cierra este form y vuelve al anterior si lo había
 
         }
     }
