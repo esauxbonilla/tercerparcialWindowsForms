@@ -93,6 +93,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>parcial3DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="parcial4DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>parcial4DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AsignarActividad.resx">
@@ -135,6 +140,17 @@
     </None>
     <None Include="parcial3DataSet.xss">
       <DependentUpon>parcial3DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="parcial4DataSet.xsc">
+      <DependentUpon>parcial4DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="parcial4DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>parcial4DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="parcial4DataSet.xss">
+      <DependentUpon>parcial4DataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

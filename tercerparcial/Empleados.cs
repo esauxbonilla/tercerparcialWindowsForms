@@ -12,6 +12,17 @@ namespace tercerparcial
 {
     public partial class Empleados : Form
     {
+
+        int idEmpleado;
+
+        public Empleados(int id)
+        {
+            InitializeComponent();
+            idEmpleado = id;
+
+            // Puedes usar este idEmpleado para cargar datos del usuario
+        }
+
         public Empleados()
         {
             InitializeComponent();

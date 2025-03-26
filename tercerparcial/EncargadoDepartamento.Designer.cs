@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.gridviewencargado = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAccionesProyecto = new System.Windows.Forms.Button();
             this.parcial3DataSet1 = new tercerparcial.parcial3DataSet();
             this.btnvolverencargado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewencargado)).BeginInit();
@@ -61,6 +61,7 @@
             this.btncrearactividad.TabIndex = 1;
             this.btncrearactividad.Text = "Acciones Actividad";
             this.btncrearactividad.UseVisualStyleBackColor = true;
+            this.btncrearactividad.Click += new System.EventHandler(this.btncrearactividad_Click);
             // 
             // btnconsultarentregas
             // 
@@ -71,6 +72,7 @@
             this.btnconsultarentregas.TabIndex = 2;
             this.btnconsultarentregas.Text = "Consultar Entregas";
             this.btnconsultarentregas.UseVisualStyleBackColor = true;
+            this.btnconsultarentregas.Click += new System.EventHandler(this.btnconsultarentregas_Click);
             // 
             // btnasignaractividad
             // 
@@ -81,6 +83,7 @@
             this.btnasignaractividad.TabIndex = 3;
             this.btnasignaractividad.Text = "Asignar Actividad";
             this.btnasignaractividad.UseVisualStyleBackColor = true;
+            this.btnasignaractividad.Click += new System.EventHandler(this.btnasignaractividad_Click);
             // 
             // label2
             // 
@@ -117,15 +120,16 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Proyectos";
             // 
-            // button1
+            // btnAccionesProyecto
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(224, 140);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 45);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Acciones proyecto";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAccionesProyecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccionesProyecto.Location = new System.Drawing.Point(224, 140);
+            this.btnAccionesProyecto.Name = "btnAccionesProyecto";
+            this.btnAccionesProyecto.Size = new System.Drawing.Size(119, 45);
+            this.btnAccionesProyecto.TabIndex = 12;
+            this.btnAccionesProyecto.Text = "Acciones proyecto";
+            this.btnAccionesProyecto.UseVisualStyleBackColor = true;
+            this.btnAccionesProyecto.Click += new System.EventHandler(this.btnAccionesProyecto_Click);
             // 
             // parcial3DataSet1
             // 
@@ -148,7 +152,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1228, 292);
             this.Controls.Add(this.btnvolverencargado);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAccionesProyecto);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.gridviewencargado);
             this.Controls.Add(this.label3);
@@ -175,7 +179,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView gridviewencargado;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAccionesProyecto;
         private parcial3DataSet parcial3DataSet1;
         private System.Windows.Forms.Button btnvolverencargado;
     }

@@ -12,12 +12,22 @@ namespace tercerparcial
 {
     public partial class CRUDproyectos : Form
     {
-        public CRUDproyectos()
+
+        int idDepartamento;
+        public CRUDproyectos(int idDep)
         {
             InitializeComponent();
+            idDepartamento = idDep;
+
+            // Aquí puedes usar idDepartamento para filtrar o precargar proyectos
         }
 
         private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

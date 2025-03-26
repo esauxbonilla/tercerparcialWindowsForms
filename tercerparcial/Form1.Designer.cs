@@ -46,6 +46,7 @@
             this.btniniciarsesion.TabIndex = 0;
             this.btniniciarsesion.Text = "Iniciar Sesion";
             this.btniniciarsesion.UseVisualStyleBackColor = false;
+            this.btniniciarsesion.Click += new System.EventHandler(this.btniniciarsesion_Click);
             // 
             // label2
             // 
@@ -56,6 +57,7 @@
             this.label2.Size = new System.Drawing.Size(235, 48);
             this.label2.TabIndex = 1;
             this.label2.Text = "Bienvenido";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // txtusuario
             // 

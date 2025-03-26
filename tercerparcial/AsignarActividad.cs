@@ -12,10 +12,16 @@ namespace tercerparcial
 {
     public partial class AsignarActividad : Form
     {
-        public AsignarActividad()
+        int idDepartamento;
+
+        public AsignarActividad(int idDep)
         {
             InitializeComponent();
+            idDepartamento = idDep;
+
+            // Aquí filtrarás empleados y actividades del departamento
         }
+
 
         private void label2_Click(object sender, EventArgs e)
         {
