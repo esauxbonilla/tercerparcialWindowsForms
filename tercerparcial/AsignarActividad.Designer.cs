@@ -131,6 +131,7 @@
             this.comboBoxColaboradores.Name = "comboBoxColaboradores";
             this.comboBoxColaboradores.Size = new System.Drawing.Size(121, 21);
             this.comboBoxColaboradores.TabIndex = 9;
+            this.comboBoxColaboradores.SelectedIndexChanged += new System.EventHandler(this.comboBoxColaboradores_SelectedIndexChanged);
             // 
             // comboBoxActividades
             // 
